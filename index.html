@@ -3,24 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Interactive card</title>
 </head>
 <body>
     <section class="container">
         <img src="./images/bg-main-desktop.png" alt="">
-        <section class="card-front">
-            <div class="circle"></div>
-            <div class="circle-border"></div>
-            <p class="number">0000</p>
-            <p class="number">0000</p>
-            <p class="number">0000</p>
-            <p class="number">0000</p>
-            <p class="name">YOUR NAME</p>
-            <p class="exp-date-card">00</p>
-            <p class="exp-date-card">/</p>
-            <p class="exp-date-card">00</p>
+        <section class="card-image card-front">
+            <img src="./images/bg-card-front.png" alt="" srcset="">
+            <div class="card-info">
+                <div class="profile-circles">
+                    <div class="circle"></div>
+                    <div class="circle-border"></div>
+                </div>
+                <div class="card-number">
+                    <p class="number">0000</p>
+                    <p class="number">0000</p>
+                    <p class="number">0000</p>
+                    <p class="number">0000</p>
+                </div>
+                <div class="name-exp">
+                    <p class="name">YOUR NAME</p>
+                    <div class="exp-date-card">
+                        <p class="exp-date-info" id="exp-month">00</p>
+                        <p class="exp-date-info">/</p>
+                        <p class="exp-date-info" id="exp-year">00</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="card-back">
+        <section class="card-image card-back">
+            <img src="./images/bg-card-back.png" alt="" srcset="">
             <p class="cvc">000</p>
         </section>
         <section class="form-container">
@@ -30,15 +43,19 @@
                 <h2>CARD NUMBER</h2>
                 <input type="text" placeholder="e.g. 1234 5678 9123 0000">
                 <div class="exp-cvc-container">
-                    <div class="exp-date">
-                        <h2>EXP. DATE (MM/YY)</h2>
-                        <input type="text" placeholder="MM">
-                        <input type="text" placeholder="YY">
+                    <div class="cvc-exp">
+                        <div class="exp-date">
+                            <h2>EXP. DATE (MM/YY)</h2>
+                            <input type="text" placeholder="MM">
+                            <input type="text" placeholder="YY">
+                        </div>
+                        <div class="cvc">
+                            <h2>CVC</h2>
+                            <input type="text" placeholder="e.g. 123">
+                        </div>
                     </div>
-                    <h2>CVC</h2>
-                    <input type="text" placeholder="e.g. 123">
-                    <button type="submit">Confirm</button>
                 </div>
+                <button type="submit">Confirm</button>
             </form>
         </section>
     </section>
