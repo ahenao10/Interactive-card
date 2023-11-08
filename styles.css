@@ -118,7 +118,7 @@ body {
     overflow: hidden;
     box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.03);
 }
-/*Imagen frontal tarjeta*/
+/*Imagen trasera tarjeta*/
 
 .card-back {
     display: flex;
@@ -127,21 +127,49 @@ body {
     left: 18%;
 }
 
-.card-back p{
+.cvc{
     position: absolute;
     color: var(--white);
+    top: 94px;
+    right: 60px;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
 /*Formulario*/
 
 .form-container{
-    display: flex;
+    display: grid;
     width: 100%;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
+    place-items: center;
 }
 
-.exp-cvc-container {
+.form-container h2{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+form {
+    width: 400px;
+}
+
+form input{
+    height: 32px;
+}
+
+.name-number input {
+    width: 300px;
+}
+
+.exp-cvc {
     display: flex;
+}
+
+.exp-date {
+    width: 50%;
+}
+
+.exp-date input {
+    width: 20%;
 }
