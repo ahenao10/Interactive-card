@@ -146,7 +146,7 @@ body {
 }
 
 .form-container h2{
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
 }
 
@@ -155,21 +155,80 @@ form {
 }
 
 form input{
-    height: 32px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 38px;
+    border: 1px solid var(--light-grayish-violet);
+    border-radius: 8px;
 }
 
-.name-number input {
-    width: 300px;
+form input::placeholder{
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--light-grayish-violet);
+    font-weight: 100;
+}
+
+.name-number input::placeholder {
+    padding-left: 8px;
 }
 
 .exp-cvc {
     display: flex;
+    width: 100%;
+}
+
+.cvc-form{
+    width: 100%;
+}
+
+.cvc-form input{
+    width: 100%;
+}
+
+.cvc-form input::placeholder{
+    padding-left: 8px;
 }
 
 .exp-date {
-    width: 50%;
+    width: 70%;
 }
 
 .exp-date input {
-    width: 20%;
+    width: 32%;
+    text-align: center;
+}
+
+.btn-page{
+    width: 100%;
+    height: 44px;
+    margin-top: 32px;
+    background-color: var(--very-dark-violet);
+    color: var(--white);
+    border-radius: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.btn-page:hover{
+    background-color: purple;
+}
+
+.complete-display{
+    display: none; /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.complete-display img{
+    width: 80px;
+}
+
+.complete-display h1{
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.complete-display h2{
+    font-size: 20px;
+    color: var(--dark-grayish-violet);
 }
